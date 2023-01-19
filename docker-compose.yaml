@@ -5,11 +5,11 @@ services:
     ost:
         image: openspeedtest/latest
         container_name: openspeedtest
-#        volumes:
-#            - ./ost_docker/:/etc/ssl/
+#        volumes:  #opcional
+#            - ./ost_docker/:/etc/ssl/  #opcional
         ports:
-            - '3000:3000'
-            - '3001:3001'
+            - '8200:3000'
+            - '8300:3001'
         restart: unless-stopped
 
         
